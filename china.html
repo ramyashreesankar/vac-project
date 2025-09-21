@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>China - Steps on the Way</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="china-page">
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">Steps on the Way</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="china.html" aria-current="page">China</a></li>
+      <li><a href="singapore.html">Singapore</a></li>
+      <li><a href="malaysia.html">Malaysia</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="hamburger"><div></div><div></div><div></div></div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="china-hero">
+    <div class="china-hero-content">
+      <h1>Discover China</h1>
+      <p>A journey through ancient traditions, modern cities, and breathtaking landscapes.</p>
+    </div>
+  </section>
+
+  <!-- About China -->
+  <main class="china-main">
+    <section class="china-about">
+      <h2>About China</h2>
+      <p>China, the world's most populous country, offers a unique blend of rich history, vibrant culture, and modern innovation. From the Great Wall to bustling cities like Beijing and Shanghai, every corner tells a story.</p>
+      <img src="https://images.unsplash.com/photo-1551907234-1e55fcf42b87?fit=crop&w=1200&q=80" alt="Great Wall of China">
+    </section>
+
+    <!-- Featured Destinations -->
+    <section class="china-destinations">
+      <h2>Must-Visit Destinations</h2>
+      <div class="destinations">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1599058917212-9d8570975e0f?fit=crop&w=400&q=80" alt="Beijing">
+          <h3>Beijing</h3>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1594521785681-c2cb85b5f195?fit=crop&w=400&q=80" alt="Shanghai">
+          <h3>Shanghai</h3>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1576671086993-5ef07f3e1a34?fit=crop&w=400&q=80" alt="Terracotta Army">
+          <h3>Xi'an - Terracotta Army</h3>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1581009146145-93e3de5db0b6?fit=crop&w=400&q=80" alt="Guilin">
+          <h3>Guilin</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Culture & Food -->
+    <section class="china-culture">
+      <h2>Culture & Food</h2>
+      <p>China's culture is deeply rooted in philosophy, art, and traditions. Explore ancient temples, traditional festivals, and experience the culinary delights, from Peking duck to dim sum and hotpot.</p>
+      <img src="https://images.unsplash.com/photo-1562440499-87e3ff2d5b8e?fit=crop&w=1200&q=80" alt="Chinese Cuisine">
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="china-footer">
+    <p>&copy; 2025 Steps on the Way | Created by Ramya Shree, Amrutha Sri & Jessica</p>
+  </footer>
+
+  <!-- Hamburger Script -->
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => { navLinks.classList.toggle('active'); });
+  </script>
+</body>
+</html>

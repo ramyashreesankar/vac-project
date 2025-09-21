@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Singapore - Steps on the Way</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">Steps on the Way</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="china.html">China</a></li>
+      <li><a href="singapore.html" aria-current="page">Singapore</a></li>
+      <li><a href="malaysia.html">Malaysia</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="hamburger"><div></div><div></div><div></div></div>
+  </nav>
+
+  <main>
+    <h1>Discover Singapore</h1>
+    <p>Singapore blends modern architecture with cultural heritage. Explore the Marina Bay Sands, Gardens by the Bay, and vibrant neighborhoods filled with amazing food and culture.</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Steps on the Way | Created by Ramya Shree, Amrutha Sri & Jessica</p>
+  </footer>
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => { navLinks.classList.toggle('active'); });
+  </script>
+</body>
+</html>
