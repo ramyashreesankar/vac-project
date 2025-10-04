@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Steps on the Way</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">Steps on the Way</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="china.html">China</a></li>
+      <li><a href="singapore.html">Singapore</a></li>
+      <li><a href="malaysia.html">Malaysia</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="hamburger"><div></div><div></div><div></div></div>
+  </nav>
+
+  <main>
+    <h1>Gallery</h1>
+    <p>Snapshots from our favorite travel destinations.</p>
+    <div class="destinations">
+      <div class="card"><img src="https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2hpbmF8ZW58MHx8MHx8fDA%3D" alt="Sample 1"><h3>China</h3></div>
+      <div class="card"><img src="https://images.unsplash.com/photo-1496939376851-89342e90adcd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2luZ2Fwb3JlfGVufDB8fDB8fHww" alt="Sample 2"><h3>Singapore</h3></div>
+      <div class="card"><img src="https://plus.unsplash.com/premium_photo-1733317372362-d34c198096bd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDV8fHBlbmFuZyUyQyUyMG1hbGF5c2lhfGVufDB8fDB8fHww" alt="Sample 3"><h3>Malaysia</h3></div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Steps on the Way | Created by Ramya Shree, Amrutha Sri & Jessica</p>
+  </footer>
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => { navLinks.classList.toggle('active'); });
+  </script>
+</body>
+</html>

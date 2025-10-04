@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steps on the Way - Travel Blog</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">Steps on the Way</div>
+    <ul class="nav-links">
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="china.html">China</a></li>
+      <li><a href="singapore.html">Singapore</a></li>
+      <li><a href="malaysia.html">Malaysia</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="hamburger"><div></div><div></div><div></div></div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Steps on the Way</h1>
+<p style="color:white;">Explore the world with us – Ramya Shree, Amrutha Sri & Jessica</p>
+      <button onclick="window.location.href='about.html'">Meet the Team</button>
+    </div>
+  </section>
+
+  <!-- Featured Destinations -->
+  <section class="destinations">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2hpbmF8ZW58MHx8MHx8fDA%3D" alt="China">
+      <h3>China</h3>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1738728045438-8f30a352158d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fHw%3D" alt="Singapore">
+      <h3>Singapore</h3>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?fit=crop&w=600&q=80" alt="Malaysia">
+      <h3>Malaysia</h3>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Steps on the Way | Created by Ramya Shree, Amrutha Sri & Jessica</p>
+  </footer>
+
+  <!-- JS for Hamburger Menu -->
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

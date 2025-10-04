@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>China - Steps on the Way</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="china-page">
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">Steps on the Way</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="china.html">China</a></li>
+      <li><a href="singapore.html">Singapore</a></li>
+      <li><a href="malaysia.html">Malaysia</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="hamburger"><div></div><div></div><div></div></div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="china-hero">
+    <div class="china-hero-content">
+      <h2 style="color: orangered;">DISCOVER CHINA</h2>
+      <p style="color: white;">A journey through ancient traditions, modern cities, and breathtaking landscapes.</p>
+    </div>
+  </section>
+
+  <!-- About China -->
+  <main class="china-main">
+    <section class="china-about">
+      <h2>About China</h2>
+      <p>China, the world's most populous country, offers a unique blend of rich history, vibrant culture, and modern innovation. From the Great Wall to bustling cities like Beijing and Shanghai, every corner tells a story.</p>
+      <p>With a history spanning over 5,000 years, China is one of the world's oldest civilizations. It's home to countless UNESCO World Heritage sites, diverse ethnic groups, and a rich tapestry of traditions that continue to influence global culture.</p>
+      <p>From the imperial palaces of the Forbidden City to the futuristic skyline of Shanghai, China presents a fascinating contrast between ancient traditions and rapid modernization.</p>
+      <img src="https://images.unsplash.com/photo-1608037521277-154cd1b89191?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3JlYXQlMjB3YWxsJTIwb2YlMjBjaGluYXxlbnwwfHwwfHx8MA%3D%3D" alt="Great Wall of China">
+    </section>
+
+    <!-- Featured Destinations -->
+    <section class="china-destinations">
+      <h2>Must-Visit Destinations</h2>
+      <p>China offers an incredible diversity of experiences, from ancient historical sites to modern metropolises. Here are some of the top destinations you shouldn't miss:</p>
+      <div class="destinations">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1713173642147-30cbbdb176d5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmVpamluZ3xlbnwwfHwwfHx8MA%3D%3D" alt="Beijing">
+          <h3>Beijing</h3>
+          <p>The capital city is home to the Great Wall, Forbidden City, and Temple of Heaven. Experience China's imperial history alongside modern Olympic architecture.</p>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1474181487882-5abf3f0ba6c2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hhbmdoYWl8ZW58MHx8MHx8fDA%3D" alt="Shanghai">
+          <h3>Shanghai</h3>
+          <p>China's largest city showcases futuristic architecture along the Bund, bustling shopping districts, and a vibrant mix of Eastern and Western influences.</p>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1527922891260-918d42a4efc8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8VGVycmFjb3R0YSUyMEFybXl8ZW58MHx8MHx8fDA%3D" alt="Terracotta Army">
+          <h3>Xi'an - Terracotta Army</h3>
+          <p>Discover the incredible Terracotta Warriors, thousands of life-sized statues built to protect China's first emperor in the afterlife.</p>
+        </div>
+    </section>
+
+    <!-- Culture & Food -->
+    <section class="china-culture">
+      <h2>Culture & Food</h2>
+      <p>China's culture is deeply rooted in philosophy, art, and traditions that span thousands of years. From Confucianism to traditional Chinese medicine, the cultural heritage is rich and diverse.</p>
+      <p>Chinese cuisine is one of the world's most diverse culinary traditions, with eight major regional styles. Must-try dishes include Peking duck, dim sum, Sichuan hotpot, and Xiaolongbao soup dumplings. Food is central to Chinese culture, with meals often being social events that bring families together.</p>
+      <p>Traditional festivals like Chinese New Year, Mid-Autumn Festival, and Dragon Boat Festival showcase the country's rich cultural heritage through colorful celebrations, special foods, and time-honored customs.</p>
+      <img src="https://images.unsplash.com/photo-1519181245277-cffeb31da2e3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2hpbmVzZSUyMGN1bHR1cmV8ZW58MHx8MHx8fDA%3D" alt="Chinese Cuisine">
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="china-footer">
+    <p>&copy; 2025 Steps on the Way | Created by Ramya Shree, Amrutha Sri & Jessica</p>
+  </footer>
+
+  <!-- Hamburger Script -->
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => { navLinks.classList.toggle('active'); });
+  </script>
+</body>
+</html>
